@@ -24,7 +24,7 @@ then
 	exit 2
 fi
 
-if type ${script_name}
+if type ${script_name} >/dev/null 2>&1
 then
 	echo "A bash command already exists with this name"
 	exit 3
