@@ -17,9 +17,9 @@ fi
 
 while read -r 
 do
-	if [[ ${REPLY} =~ "${1}" ]]
+	if [[ $REPLY =~ "$1" ]]
 	then
-		echo "${REPLY}" 
+		echo "$REPLY" 
 		break
 	fi
 done
@@ -27,7 +27,7 @@ done
 # print out the remaining file.
 while read -r
 do
-	echo "${REPLY}" 
+	echo "$REPLY" 
 done
 
 exit 0
